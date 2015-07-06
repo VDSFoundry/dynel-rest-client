@@ -69,5 +69,28 @@ describe('RESTClient', function() {
             }
         });
     });
+
+
+    it('should fire success on successful post', function(done) {
+
+        var data = {
+            username: 'username',
+            password: 'password'
+        };
+
+        var client = new RESTClient({baseUrl: baseUrl});
+        client.post({
+            url: 'rest/post1',
+            data: data,
+            context: this,
+            success: function(data) {
+                done();
+            },
+            error: function(err) {
+                console.log('error: ' + err);
+                throw err;
+            }
+        });
+    });
 });
 
