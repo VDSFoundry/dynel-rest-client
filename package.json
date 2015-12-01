@@ -1,6 +1,6 @@
 {
   "name": "dynel-rest-client",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "description": "Dynamic Elements REST Client",
   "main": "index.js",
   "directories": {
